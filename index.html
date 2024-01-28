@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/all.min.css">
+        <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        
+        
+        <!-- meta -->
+        <link rel="icon" href="images/logo.png">
+        <title>Yummy</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="" >
+        <meta name="keywords" content="eduction ,teacher ">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+    </head>
+    <body>
+      <aside class="sidebar d-flex align-items-center position-fixed">
+        <div class="menu menu h-100">
+            <ul class="list-unstyled px-5">
+              <li><a href="#" class="text-decoration-none"  onclick="redirectToDetailsSearch()">Search</a></li>
+                <li><a href="#" class="text-decoration-none" onclick="redirectToDetailsCategory()">Categories</a></li>
+                <li><a href="#" class="text-decoration-none" onclick="redirectToDetailsArea()">Area</a></li>
+                <li><a href="#" class="text-decoration-none" onclick="redirectToDetailsIngredients()">Ingredients</a></li>
+                <li><a href="#" class="text-decoration-none" onclick="redirectToDetailscontactUs()">Contact Us</a></li>
+            </ul>
+    
+            <div class="details text-white ">
+                <div class="icon d-flex ms-3 g-1">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+    
+                <div class="text ms-3">
+                    <p>Copyright Â© 2019 All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="option bg-white">
+           <div>
+            <i class="fa-solid fa-bars fa-2x d-flex align-items-center justify-content-center" id="bars"></i>
+            <!-- <i class="fa-solid fa-xmark fa-2x"></i> -->
+            <div class="i-down">
+              <i class="fa-solid fa-globe"></i>
+              <i class="fa-solid fa-share-nodes"></i>
+            </div>
+            <div class="image"><img src="images/logo.png"  alt=""></div>
+           </div>
+        </div>
+    </aside>
+
+
+
+
+      <div class="container">
+        <div class="row meal-container" id="mealContainer"></div>
+    </div>
+
+    <div id="loading">
+      <i class="fa-solid fa-spinner fa-3x fa-spin"></i>
+    </div>
+
+     <script src="js/bootstrap.bundle.min.js"></script>
+     <script src="js/jquery-3.7.1.min.js"> </script>
+     
+      <script src="app.js"> </script>
+    </body>
+   </html>

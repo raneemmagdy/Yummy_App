@@ -1,0 +1,155 @@
+body{
+    background-color: #0D0D0D;
+    
+  }
+  
+  #loading{
+    position: fixed;
+    top: 0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    z-index: 9999999999999999999999;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .area-item {
+    margin: 10px;
+    padding: 10px;
+   color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.fa-house-laptop {
+    margin-bottom: 10px;
+}
+  
+  /* nav */
+  
+  
+  
+  
+  aside li {
+    padding: 20px;
+  }
+  
+  .menu {
+    background-color: black;
+  }
+  
+  aside {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+  }
+  
+  .menu ul i {
+    left: 80%;
+    color: white;
+  }
+  
+  .menu {
+    background-color: black; 
+    height: 100vh; 
+  }
+  
+  .option {
+    left: 100%;
+    top: 0;
+    transform: translateY(0); 
+    background-color: black; 
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .menu ul a {
+    opacity: 0;
+    color: white;
+  }
+  .option i,
+  .menu i {
+    cursor: pointer;
+    display: block;
+  }
+  .details {
+    position: absolute; 
+    bottom: 0;
+    width: 90%;
+  }
+  .i-down{
+    position: absolute; 
+    bottom: 20px;
+    width: 90%;
+  }
+  .option i{
+    color: black;
+  }
+  
+  .image img{
+    position: absolute; 
+    top: 10px;
+    left: 0px;
+    width: 50px;
+   
+  }
+  
+  
+  
+
+  .mealContainerArea {
+    margin-top: 20px;
+  }
+  
+
+  .meal-Area {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  .meal-Area img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .overlay-Area {
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    width: 100%;
+    height: 0; 
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    align-items: center;
+   
+    overflow: hidden; 
+    transition: height 0.5s ease; 
+    border-radius: 8px;
+  }
+  
+  .meal-Area:hover .overlay-Area {
+    height: 100%; 
+  }
+  
+  .meal-Area:hover .meal-name-Area {
+    display: block;
+  }
+  
+  .meal-name-Area {
+    display: none;
+   
+    color: black;
+  }

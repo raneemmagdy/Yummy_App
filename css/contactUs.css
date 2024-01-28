@@ -1,0 +1,100 @@
+body{
+    background-color: #0D0D0D;
+   
+  }
+
+
+  #formContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#registrationForm {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.form-group {
+    width: 100%;
+}
+
+
+
+/* nav */
+
+
+
+
+aside li {
+    padding: 20px;
+  }
+  
+  .menu {
+    background-color: black;
+  }
+  
+  aside {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+  }
+  
+  .menu ul i {
+    left: 80%;
+    color: white;
+  }
+  
+  .menu {
+    background-color: black; 
+    height: 100vh; 
+  }
+  
+  .option {
+    left: 100%;
+    top: 0;
+    transform: translateY(0); 
+    background-color: black; 
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .menu ul a {
+    opacity: 0;
+    color: white;
+  }
+  .option i,
+  .menu i {
+    cursor: pointer;
+    display: block;
+  }
+  .details {
+    position: absolute; 
+    bottom: 0;
+    width: 90%;
+  }
+  .i-down{
+    position: absolute; 
+    bottom: 20px;
+    width: 90%;
+  }
+  .option i{
+    color: black;
+  }
+  
+  .image img{
+    position: absolute; 
+    top: 10px;
+    left: 0px;
+    width: 50px;
+   
+  }
+  

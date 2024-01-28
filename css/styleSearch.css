@@ -1,0 +1,166 @@
+
+  #searchInput,#firstLetterInput{
+    background-color:#0D0D0D;
+    margin-top: 20px;
+   
+  }
+
+  #loading{
+    position: fixed;
+    top: 0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    z-index: 9999999999999999999999;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .meal-container2 {
+    margin-top: 20px;
+  }
+  #firstLetterInput::placeholder,#searchInput::placeholder {
+    color: white; 
+}
+  
+  
+  .meal {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  .meal img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    width: 100%;
+    height: 0; 
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    align-items: center;
+   
+    overflow: hidden; 
+    transition: height 0.5s ease; 
+    border-radius: 8px;
+  }
+  
+  .meal:hover .overlay {
+    height: 100%; 
+  }
+  
+  .meal:hover .meal-name {
+    display: block;
+  }
+  
+  .meal-name {
+    display: none;
+   
+    color: black;
+  }
+  
+  
+  
+  /* nav */
+  
+  
+  body{
+    background-color: black;
+    color: white;
+    /* overflow: hidden; */
+}
+
+
+  #loading{
+    position: fixed;
+    top: 0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    z-index: 9999999999999999999999;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  aside li {
+    padding: 20px;
+  }
+  
+  .menu {
+    background-color: black;
+  }
+  
+  aside {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+  }
+  
+  .menu ul i {
+    left: 80%;
+    color: white;
+  }
+  
+  .menu {
+    background-color: black; 
+    height: 100vh; 
+  }
+  
+  .option {
+    left: 100%;
+    top: 0;
+    transform: translateY(0); 
+    background-color: black; 
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .menu ul a {
+    opacity: 0;
+    color: white;
+  }
+  .option i,
+  .menu i {
+    cursor: pointer;
+    display: block;
+
+  }
+  .details {
+    position: absolute; 
+    bottom: 0;
+    width: 90%;
+  }
+  .i-down{
+    position: absolute; 
+    bottom: 20px;
+    width: 90%;
+  }
+.option i{
+    color: black;
+}
+.image img{
+  position: absolute; 
+  top: 10px;
+  left: 0px;
+  width: 50px;
+ 
+}
+ 
